@@ -37,3 +37,28 @@ const addTwo = function(num) {
 function addOne(num) {
     return num + 1
 }
+
+//  "this" is a keyword used for referencing. It can refer keys in objects. it returns undefined when used inside a function.
+
+//      ARROW FUNCTIONS
+
+//declaration:
+const addNum = (num1, num2) => {
+    return num1 + num2
+}
+
+//     IMPLICIT RETURN
+const product = (num1, num2) => num1 * num2     // num1 * num2 can also be enclosed between parenthesis
+
+//      IMMEDIATELY INVOKED FUNCTION EXPRESSION
+//  they are used to invoke a function immediately. sometimes there is a lot of mess of variables in global space so to prevent a function from that mess, we use IIFE
+
+//  named iife:
+(function something(){
+    console.log(`something executed`);
+})();       //=>    use ; b/w two consecutive IIFE to avoid error
+
+//  unnamed / simple iife
+// (   (name) => {
+//     console.log(`Hi Mr. ${name}`);
+// })("Bilal")
